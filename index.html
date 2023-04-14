@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Unit Converter Calculator</h1>
+	<div class="converter">
+		<h2>Length Converter</h2>
+		<label  class="label-from">From:</label>
+		<select id="lengthFrom">
+			<option value="millimeters">Millimeters</option>
+			<option value="centimeters">Centimeters</option>
+			<option value="meters">Meters</option>
+			<option value="kilometers">Kilometers</option>
+			<option value="inches">Inches</option>
+			<option value="feet">Feet</option>
+			<option value="yards">Yards</option>
+			<option value="miles">Miles</option>
+		</select>
+		<input type="number" id="lengthValue">
+		<label>To:</label>
+		<select id="lengthTo">
+			<option value="millimeters">Millimeters</option>
+			<option value="centimeters">Centimeters</option>
+			<option value="meters">Meters</option>
+			<option value="kilometers">Kilometers</option>
+			<option value="inches">Inches</option>
+			<option value="feet">Feet</option>
+			<option value="yards">Yards</option>
+			<option value="miles">Miles</option>
+		</select>
+		<input type="text" id="lengthResult" readonly>
+	</div>
+	<div class="converter">
+		<h2>Weight Converter</h2>
+		<label  class="label-from">From:</label>
+		<select id="weightFrom">
+			<option value="grams">Grams</option>
+			<option value="kilograms">Kilograms</option>
+			<option value="ounces">Ounces</option>
+			<option value="pounds">Pounds</option>
+		</select>
+		<input type="number" id="weightValue">
+		<label>To:</label>
+		<select id="weightTo">
+			<option value="grams">Grams</option>
+			<option value="kilograms">Kilograms</option>
+			<option value="ounces">Ounces</option>
+			<option value="pounds">Pounds</option>
+		</select>
+		<input type="text" id="weightResult" readonly>
+	</div>
+	<div class="converter">
+		<h2>Temperature Converter</h2>
+		<label  class="label-from">From:</label>
+		<select id="tempFrom">
+			<option value="celsius">Celsius</option>
+			<option value="fahrenheit">Fahrenheit</option>
+			<option value="kelvin">Kelvin</option>
+		</select>
+		<input type="number" id="tempValue">
+		<label>To:</label>
+		<select id="tempTo">
+			<option value="celsius">Celsius</option>
+			<option value="fahrenheit">Fahrenheit</option>
+			<option value="kelvin">Kelvin</option>
+		</select>
+		<input type="text" id="tempResult" readonly>
+	</div>
+	<h3>Currency Converter</h3>
+    <div class="converter">
+      <div class="input-container">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" step="0.01" min="0" required>
+      </div>
+      <div class="input-container">
+        <label for="from">From:</label>
+        <select id="from">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+		  <option value="INR">INR</option>
+
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="to">To:</label>
+        <select id="to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+		  <option value="INR">INR</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <button onclick="convert()">Convert</button>
+      </div>
+      <div class="result-container">
+        <label for="result">Result:</label>
+        <input type="text" id="result" readonly>
+      </div>
+    </div>
+    
+	<script src="script.js"></script>
+</body>
+</html>
