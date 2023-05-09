@@ -122,7 +122,7 @@ function convert() {
       USD: 1,
       EUR: 0.89,
       GBP: 0.78,
-      INR: 73.17
+      INR: 81.85
     };
   
     // Calculate result
